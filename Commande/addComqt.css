@@ -1,0 +1,57 @@
+.form {
+  flex-direction: column;
+}
+
+.search {
+  display: flex;
+  float: right;
+  position: relative;
+  top: 0;
+  align-items: center;
+  flex-direction: row;
+  width: max-content;
+  right: -159px;
+}
+
+.input-search {
+  margin: 0;
+  margin-right: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 2px black solid;
+}
+
+.iterate {
+  height: max-content;
+  background-color: transparent;
+  border: none;
+  color: black;
+  width: 5vw;
+  border-radius: 21px;
+  border: 1px black solid;
+  margin-right: 25px;
+  padding: 8px;
+}
+
+.title{
+  margin: 0;
+}
+
+select {
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 54px 0;
+  width: 221%;
+  right: 172px;
+  position: relative;
+}
+
+button {
+  margin: 0;
+}
+
+.nav{
+  margin-bottom: 40px;
+}

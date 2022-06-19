@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  background-image: url("../Images/Bg/bg6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #0000009c;
+  background-blend-mode: overlay;
+}
+
+.search {
+  display: flex;
+  float: right;
+  position: relative;
+  top: 19px;
+  margin-right: 22px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.input-search {
+  margin: 0;
+  margin-right: 15px;
+  border: none;
+  height: 30px;
+  outline: none;
+}
+
+.fa-search {
+  font-size: 1.6em;
+  color: #000000b3;
+}
+
+.tableau {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 60px auto;
+}
+
+.caption {
+  font-size: 28px;
+  margin-bottom: 18px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 7px 8px 14px black;
+}
+
+th,
+td {
+  border: 1px solid gray;
+  width: max-content;
+  height: 6vh;
+  text-align: center;
+  padding: 10px;
+}
+
+tr {
+  background-color: #f5f5f5;
+}
+
+thead {
+  background-color: rgb(185, 50, 50);
+}
+
+.edit {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.fa-edit {
+  color: #002d68;
+}
+
+.upload{
+  height: 15vh;
+}
+
+/* -------------------------------------------------- POPUP ----------------------------------------------- */
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transition: 400ms ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+  width: 41%;
+  margin: auto;
+  background-color: #fff;
+  padding: 50px;
+  font-size: 0.8em;
+  height: 60vh;
+  overflow-y: scroll;
+  z-index: 6;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.update_form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-family: monospace;
+  font-size: 1.4em;
+}
+
+.fa-product-hunt {
+  margin: 0;
+}
+
+label {
+  margin-bottom: 0px;
+}
+
+.upButton {
+  height: 40px;
+  background-color: #3f4fd2;
+  border: none;
+  font-size: 1em;
+  color: white;
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+
+.upInput {
+  border: none;
+  border-bottom: 2px #484747 solid;
+  height: 28px;
+  outline: none;
+}
+
+.upHeader {
+  display: flex;
+  font-size: 2em;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+  padding: 51px;
+  background-color: #5bc4a6;
+  position: relative;
+  top: -50px;
+  margin: 0 -50px;
+  height: 0vh;
+  color: white;
+}
+
+.upClose {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.25rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.displayNone {
+  display: none;
+}
+
+.upOverlay {
+  background-color: rgba(0, 0, 0, 0.54);
+  background-blend-mode: overlay;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.upOverlay.active {
+  opacity: 1;
+  pointer-events: all;
+}

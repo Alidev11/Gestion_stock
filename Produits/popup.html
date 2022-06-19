@@ -1,0 +1,24 @@
+<div class="popup">
+            <div class="upHeader">
+                <div class="upTitle">Modifier un produit</div>
+                <button class="upClose">&times;</button>
+            </div>
+            <form class="update_form" action="updateProduit.php" method="POST">
+                    <!-- <i class="fab fa-product-hunt"></i> -->
+                    <label for="ref">Reference du produit à modifier:</label>
+                    <input class="upInput" type="number" name="ref" id="ref" value="<?php echo "$var" ?>" >
+                    <label for="libelle">Libelle:</label>
+                    <input class="upInput" type="text" name="libelle" id="libelle" >
+                    <label for="prix_u">Prix unitaire:</label>
+                    <input class="upInput" type="text" name="prix_u" id="prix_u" >
+                    <label for="qt">La quantite en stock:</label>
+                    <input class="upInput" type="text" name="qt" id="qt" >
+                    <label for="prix_v">Prix de vente:</label>
+                    <input class="upInput" type="text" name="prix_v" id="prix_v" >
+                    <label for="prix_a">Prix d'achat:</label>
+                    <input class="upInput" type="text" name="prix_a" id="prix_a" >
+                    <label for="cat">Categorie du produit:</label>
+                    <input class="upInput" type="text" name="cat" id="cat" >
+                    <button type="submit" name='submit' class="upButton">Modifier</button>
+            </form>
+        </div>

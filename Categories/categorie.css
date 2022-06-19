@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  left: 42%;
+  width: 53%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 12px 0 76px 0;
+}
+
+.copyright {
+  position: relative;
+  bottom: -5vh;
+}
+
+.nav {
+  width: 77%;
+  left: 18%;
+  position: relative;
+}

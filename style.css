@@ -1,0 +1,458 @@
+/* -------------------------- in general -------------------------------- */
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body{
+  background-color: #0000000f;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.none {
+  display: none;
+}
+
+/* ------------------ Container --------------------- */
+
+.contain1 {
+  display: flex;
+  width: 100%;
+}
+
+/* ----------------------------------------- Aside -------------------------------------------- */
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #a9c0ff;
+  width: 20%;
+  font-family: sans-serif;
+  color: black;
+  position: fixed;
+  background-blend-mode: luminosity;
+  padding-right: 24px;
+  top: 0;
+  background-size: cover, auto;
+  height: 100vh;
+  overflow: scroll;
+  background-image: url(./Images/Bg/bg6.jpg), url(./Images/Patterns/pattern.png);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ededed;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b8bbb863;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #878987a6; 
+}
+
+.width {
+  width: 19%;
+  transition: 0.6s;
+}
+
+.menu-size {
+  width: 19%;
+}
+
+.icon-size {
+  width: 17%;
+}
+
+.menu {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 27px;
+  text-align: center;
+  color: #060606c7;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.fa-chevron-down {
+  font-size: 0.8em;
+  color: #000000a8;
+  margin-left: 5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.pr {
+  margin-bottom: 4px;
+  font-size: 17px;
+  font-weight: lighter;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  padding: 20px 29px;
+  /* color: white; */
+  display: flex;
+  align-items: center;
+}
+
+.pr1:hover {
+  color: #c8f2ff;
+}
+
+.icons {
+  width: 14%;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.menu-icon {
+  width: 21%;
+  cursor: pointer;
+  margin-right: 10px;
+  height: 81%;
+}
+
+/* ------------------------------------------ header --------------------------------------- */
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 77%;
+  left: 23.3%;
+  position: relative;
+}
+
+header {
+  background-image: url(./Images/Bg/bg4.jpg);
+  background-size: cover;
+  color: black;
+  height: 100vh;
+  background-color: rgba(61, 80, 185, 0.47);
+  background-color: #6871db;
+  background-blend-mode: overlay;
+}
+
+.nav {
+  display: flex;
+  float: left;
+  justify-content: center;
+  padding: 30px;
+  align-items: center;
+}
+
+.btn,
+.logout {
+  cursor: pointer;
+}
+
+.space {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  background-image: url(./Images/space-bg1-remove.png);
+  background-size: cover;
+  height: 64vh;
+  width: 62%;
+}
+
+.text {
+  height: max-content;
+  position: relative;
+  top: 117px;
+  padding: 0;
+  left: 43px;
+}
+
+.text1 {
+  font-size: 2.4em;
+  margin-bottom: 25px;
+}
+
+.text2 {
+  margin-bottom: 40px;
+  color: #000000d1;
+}
+
+.logo-text {
+  font-family: "Cookie", cursive;
+  margin-right: 35vw;
+  font-size: 2em;
+  margin-left: 86px;
+}
+
+.welcome {
+  margin-right: 3vw;
+}
+
+.logout {
+  height: 39px;
+  background-color: #c87f7f;
+  border: none;
+  width: 9vw;
+  font-size: 1.1em;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outLink {
+  color: white;
+}
+
+.btn {
+  height: 43px;
+  background-color: #000000e6;
+  border: none;
+  color: white;
+  width: 9vw;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------------------------- Dashboard ---------------------------------- */
+
+.dash {
+  background-color: #bbccfa;
+  display: flex;
+  background-attachment: fixed;
+  flex-direction: column;
+  background-image: url(./Images/Bg/bg1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.stat{
+  background-image: url(./Images/Bg/bg1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: #bbccfa;
+  background-blend-mode: overlay;
+}
+
+.pr:hover{
+  background-color: #8badf7;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.pr-link{
+  color: #4070f3c4;
+  font-weight: 100;
+}
+
+.cards {
+  display: grid;
+  width: 100%;
+  height: max-content;
+  position: relative;
+  top: 0%;
+  margin: auto;
+  grid-template-columns: 20vw 20vw 20vw;
+  grid-template-rows: 20vw 20vw;
+  grid-column-gap: 7vw;
+  left: 0;
+  justify-content: center;
+  justify-items: center;
+  align-items: start;
+}
+
+.part {
+  background-color: #0003a4ad;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  font-size: 1.18em;
+  top: 33.05%;
+  color: #fff;
+}
+
+.card1 {
+  background-color: white;
+  height: 10em;
+  width: 104%;
+  position: relative;
+  top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* border: 1px solid #0000004a; */
+  padding: 6px;
+  box-shadow: 4px 5px 22px -6px rgba(0, 0, 0, 0.4);
+}
+
+.pr-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  color: #272727;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 33vh;
+}
+
+.pr-title::after {
+  content: "";
+  width: 5vw;
+  height: 2px;
+  position: relative;
+  top: 10px;
+  background-color: #272727;
+  margin: 0vh;
+  display: inline-block;
+}
+
+.icon-img {
+  width: 35%;
+  margin: auto;
+  margin-bottom: auto;
+  margin-bottom: 60px;
+}
+
+/* ----------------------------------------------- Chart -------------------------------------------- */
+
+.chart1{
+  width: 42vw;
+  margin: auto;
+}
+
+/* --------------------------------------------------- footer --------------------------------------- */
+
+.footer {
+  background-size: cover;
+  height: 19vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(./Images/Bg/bg1.jpg);
+  background-attachment: fixed;
+  width: 77%;
+  overflow-clip-margin: hidden;
+  /* overflow-y: hidden; */
+  left: 23.3%;
+  z-index: 1;
+  background-color: #bbccfa;
+  background-blend-mode: overlay;
+  position: relative;
+  /* border-right: 1px #00000061 solid; */
+}
+
+.copy {
+  color: white;
+  left: 27px;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 0.86rem;
+  font-family: sans-serif;
+  bottom: 20px;
+  z-index: 10;
+}
+
+.footer-links {
+  z-index: 10;
+}
+
+.footer-li {
+  margin-right: 10px;
+}
+
+.footer-icon {
+  list-style: none;
+  display: flex;
+  right: 62px;
+  position: absolute;
+  transform: translateY(-50%);
+  bottom: 10px;
+}
+
+.iconn {
+  color: white;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 28vh;
+  flex-direction: column;
+  color: white;
+  top: -111px;
+}
+
+.logoFooter {
+  font-family: "Cookie", cursive;
+  margin-right: 0;
+  font-size: 3em;
+  margin-left: 0;
+}
+
+.inner {
+  color: #020202;
+  font-size: 1em;
+  text-justify: inherit;
+  word-spacing: 5px;
+}
+
+.border {
+  border: none;
+}
+
+
+
+.custom-shape-divider-bottom-1640443358 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1640443358 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 385.3px);
+  height: 127px;
+}
+
+.custom-shape-divider-bottom-1640443358 .shape-fill {
+  fill: #000000c7;
+}
